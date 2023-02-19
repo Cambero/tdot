@@ -1,0 +1,58 @@
+# vim: ft=gitconfig
+## mas coments
+
+[include]
+  path = ~/.dotfiles/gitconfig.global
+  path = ~/.dotfiles/gitalias/gitalias.txt
+
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[user]
+  name = {{ .name }}
+  email = {{ .email }}
+
+# Only work inside dirs that are git repositories
+# So dont work in Sngular/
+[includeIf "gitdir:~/Work/Sngular/"]
+  path = {{ .chezmoi.homeDir }}/Work/Sngular/.gitconfig
+
+# Only work inside dirs that are git repositories
+[includeIf "gitdir:~/Work/NSS/"]
+  path = {{ .chezmoi.homeDir }}/Work/NSS/.gitconfig
+
+[github]
+  user = Cambero
+  # token = 85c3fdcc8f67c4ee71dac4bfa2acd7ed
+  token = 2128ec36e87a0a5febd33d2bd36e1d04312b21f7
+[core]
+	excludesfile = {{ .chezmoi.homeDir }}/.gitignore
+	quotepath = false
+	attributesfile = {{ .chezmoi.homeDir }}/.gitattributes
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = matching
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[mergetool]
+	keepBackup = true
+
+[commit]
+  gpgsign = false
+
+[credential]
+	helper = cache
+
+# From chezmoi edit 
+
+# more editing
+	
