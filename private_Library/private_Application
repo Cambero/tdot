@@ -1,0 +1,1 @@
+{{ .chezmoi.sourceDir }}/keybindings.json Support/private_Code/User/symlink_keybindings.json.tmpl
