@@ -14,6 +14,9 @@ export ZSH="$ZDOTDIR/ohmyzsh"
 # OH MY ZSH
 export DISABLE_AUTO_UPDATE="true"
 
+# Disable lib/directories.zsh
+zstyle ':omz:directories' aliases no
+
 # +---------+
 # | HISTORY |
 # +---------+
@@ -167,6 +170,8 @@ alias l="ls -l"
 alias ch="chezmoi"
 alias zedit="chezmoi edit $ZDOTDIR/.zshrc"
 alias h="history -i -50" 
+alias ..="cd .."
+
 # alias fzf="sk"
 
 # alias h="history -i"
