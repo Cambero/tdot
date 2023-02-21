@@ -99,8 +99,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-completions zsh-syntax-highlighting git fzf-tab)
-
+plugins=(zsh-autosuggestions zsh-completions zsh-syntax-highlighting  fzf-tab)
+# git
 source $ZSH/oh-my-zsh.sh
 
 source $ZDOTDIR/completion.zsh
@@ -174,7 +174,7 @@ alias ch="chezmoi"
 alias zedit="chezmoi edit $ZDOTDIR/.zshrc"
 alias h="history -i -50" 
 alias ..="cd .."
-
+alias g="git"
 # alias fzf="sk"
 
 # alias h="history -i"

@@ -2,8 +2,7 @@
 # a bottat los keys M1
 #
 [include]
-  path = ~/.dotfiles/gitconfig.global
-  path = ~/.dotfiles/gitalias/gitalias.txt
+  path = ~/.config/git/gitalias.txt
 
 [color]
   branch = auto
@@ -17,20 +16,20 @@
 # Only work inside dirs that are git repositories
 # So dont work in Sngular/
 [includeIf "gitdir:~/Work/Sngular/"]
-  path = {{ .chezmoi.homeDir }}/Work/Sngular/.gitconfig
+  path = /Users/jlcambero/Work/Sngular/.gitconfig
 
 # Only work inside dirs that are git repositories
 [includeIf "gitdir:~/Work/NSS/"]
-  path = {{ .chezmoi.homeDir }}/Work/NSS/.gitconfig
+  path = /Users/jlcambero/Work/NSS/.gitconfig
 
 [github]
   user = Cambero
   # token = 85c3fdcc8f67c4ee71dac4bfa2acd7ed
   token = 2128ec36e87a0a5febd33d2bd36e1d04312b21f7
 [core]
-	excludesfile = {{ .chezmoi.homeDir }}/.gitignore
+	excludesfile = /Users/jlcambero/.gitignore
 	quotepath = false
-	attributesfile = {{ .chezmoi.homeDir }}/.gitattributes
+	attributesfile = /Users/jlcambero/.gitattributes
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
