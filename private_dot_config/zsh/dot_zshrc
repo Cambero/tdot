@@ -163,8 +163,11 @@ eval "$(zoxide init zsh)"
 
 ### ALIAS
 
-alias la="ls -lA"
-alias l="ls -l"
+alias l="exa -1 --git --group-directories-first --icons"
+alias la="l -a"
+alias ll="l -l"
+alias lla="l -la"
+
 
 
 alias ch="chezmoi"
