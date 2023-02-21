@@ -1,3 +1,4 @@
 {
-    "editor.fontSize": 14
+    "editor.fontSize": 16,
+    "security.workspace.trust.untrustedFiles": "open"
 }

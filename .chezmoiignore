@@ -1,2 +1,4 @@
+*.zsh.zwc
+/cache
 settings.json
 keybindings.json
