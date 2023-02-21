@@ -1,1 +1,1 @@
-eval "$(brew shellenv)"
+eval "$(which brew) shellenv)"
