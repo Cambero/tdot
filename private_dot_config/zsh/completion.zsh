@@ -5,6 +5,11 @@
 #  \____\___/|_|  |_|_|   |_____|_____| |_| |___\___/|_| \_|
  #
 
+#
+# Origin
+#
+# https://github.com/Phantas0s/.dotfiles/blob/master/zsh/completion.zsh
+
 # +---------+
 # | General |
 # +---------+
